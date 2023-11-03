@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>oncontextmenu Example</title>
+</head>
+<body>
+
+<div oncontextmenu="customContextMenu(event)">Right-click me</div>
+
+<script>
+function customContextMenu(event) {
+    event.preventDefault(); // Prevent the default context menu from appearing
+    alert("Custom context menu action performed.");
+}
+</script>
+
+</body>
+</html>

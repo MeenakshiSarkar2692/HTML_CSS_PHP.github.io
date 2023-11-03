@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 16.4</title>
+</head>
+<body>
+    <script>
+        function getcube(num){
+            alert(num*num*num);
+        }
+    </script>
+    <button onclick = "getcube(4)">Click Here</button>
+    <hr>
+    <script>
+        function swap(obj){
+            let temp = obj.a;
+            obj.a=obj.b;
+            obj.b=temp;
+        }
+        let obj={
+            a:10,
+            b:20
+        }
+        alert(`Before Calling: a= ${obj.a}  b=${obj.b}`);
+        swap(obj);
+        alert(`After Calling: a= ${obj.a}  b= ${obj.b}`);
+    </script>
+</body>
+</html>

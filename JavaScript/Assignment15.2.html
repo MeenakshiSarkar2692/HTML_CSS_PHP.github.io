@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 15.2</title>
+</head>
+<body>
+    <p id="day"></p>
+    <script>
+        const dayOfWeek = new Date().getDay();
+
+        switch (dayOfWeek) {
+            case 0:
+                document.getElementById('day').innerHTML = 'Sunday is a Weekend';
+                break;
+            case 1:
+                document.getElementById('day').innerHTML = 'Monday is a Working Day';
+                break;
+            case 2:
+                document.getElementById('day').innerHTML = 'Tuesday is a Working Day';
+                break;
+            case 3:
+                document.getElementById('day').innerHTML = 'Wednesday is a Working Day';
+                break;
+            case 4:
+                document.getElementById('day').innerHTML = 'Thursday is a Working Day';
+                break;
+            case 5:
+                document.getElementById('day').innerHTML = 'Friday is a Working Day';
+                break;
+            case 6:
+                document.getElementById('day').innerHTML = 'Saturday is a Weekend';
+                break;
+            default:
+                document.getElementById('day').innerHTML = 'Good Day';
+        }
+    </script>
+</body>
+</html>
+

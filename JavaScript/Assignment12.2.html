@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 12.2</title>
+    <script>
+    function leap(){
+        var year = 2002;
+        if(year%400==0 || ((year%100!=0) && (year%4==0)))
+        {
+            document.write(year+" is Leap Year");
+        }
+        else{
+            document.write(year+" is not a Leap Year");
+        }
+    }   
+    </script>
+</head>
+<body>
+        <button type="button" onclick="leap()">Click Here</button>
+</body>
+</html>
